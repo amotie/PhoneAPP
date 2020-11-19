@@ -1,4 +1,4 @@
-package com.alimotie.app.controlor;
+package com.alimotie.app.controller;
 
 
 
@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/phone")
-public class PhoneControlor {
+public class PhoneController  {
     private PhoneRepository phoneRepository;
 
     @Autowired
-    public PhoneControlor(PhoneRepository phoneRepository) {
+    public PhoneController (PhoneRepository phoneRepository) {
         this.phoneRepository = phoneRepository;
     }
 
